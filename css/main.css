@@ -1,1 +1,105 @@
-font-family: 'Dosis', sans-serif;
+body{font-family: 'Dosis', sans-serif;}
+
+h1,h2,h3{font-weight: 900;}
+
+h4,h5,h6{font-weight: 700;}
+
+.btn-outline-secondary{
+   background-color: transparent  /*!important*/; 
+    border-color: black;
+    color: gold;
+    border-radius: 0%;
+    position: relative;
+}
+
+.btn-outline-secondary::before{
+    content: "";
+    position: absolute;
+    background-color: tomato;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-outline-secondary:hover::before{
+    width: 100%;
+}
+
+.btn-secondary{
+    border-radius: 0%;
+    background-color: brown;
+    border-color: darkblue;
+}
+
+.btn-primary{
+    border-radius: 0%;
+    background-color:yellow;
+    border-color: red;
+    color: black;
+}
+
+.btn-primary:hover{
+    background-color:green;
+    border-color: black;
+    color: blue;
+}
+
+
+.navbar{
+    background: whitesmoke;
+    border-color: yellow ;
+}
+
+.navlink{
+    color: blue;
+}
+
+
+.call-to-action{
+    background-color: darksalmon;
+    color: black;
+}
+
+.heading-line{
+    height: 5px;
+    width: 10%;
+    background-color: blueviolet;
+}
+
+
+
+
+.services i{
+    font-size: 1.2rem;
+    width: 60px;
+    height: 60px;
+    border: greenyellow 1px solid;
+    color: deeppink;
+}
+
+.dark{
+    background: black;
+    color: wheat;
+    height: 300px;
+}
+
+.dark i{
+    color: yellow;
+}
+
+.portfolio .img-fluid{
+    height: 300px;
+    object-fit: cover;
+}
+
+@media(max-width:900px){
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+}
